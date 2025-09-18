@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Asimovian&family=Bitcount+Ink:wght@100..900&family=Dancing+Script:wght@400..700&family=Pacifico&family=Sirivennela&family=UnifrakturMaguntia&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(2, 2, 43);
+    color: white;
+}
+
+.container {
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+    padding: 12px;
+    border-radius: 15px;
+    text-align: center;
+    height: 300px;
+    width: 450px;
+}
+
+.container h2 {
+    margin-bottom: 35px;
+    border-bottom: 1px solid;
+    font-size: 2rem;
+}
+
+.container h4 {
+    font-size: 1.5rem;
+    text-align: end;
+}
+
+.container #quote {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    min-height: 100px;
+    background-color: #0a0a52;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: "Bitcount Ink", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+#newQuote {
+    padding: 10px 20px;
+    border: none;
+    background-color: rgb(0, 0, 139);
+    color: white;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#quoteBtn:disabled {
+    cursor: not-allowed;
+}
