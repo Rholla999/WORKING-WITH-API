@@ -5,18 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather Api</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <main>
         <div class="container">
         <h1>Weather Api</h1>
+        <div  id="displayTime">
+            <span id="dayEl">Thursday,</span>
+        <span id="timeDisplay">
+        </span>   
+        </div>
         <form id="formContainer">
+            <div class="input-group">
             <input type="text" id="cityInput" placeholder="Enter city name" required>
-            <button type="submit" id="getWeatherBtn">Get Weather</button>
+            <button type="submit" id="getWeatherBtn">
+               <i class="fa-solid fa-magnifying-glass">
+                <span class="hide">.</span>
+               </i>
+            </button>
+           </div>
         </form>
         <div class="cityDisplay">
         <h3>City:<span id="cityName"> Jos</span></h3>
-
+            <img src="img/clouds.png" alt="weather" id="weatherIcon" height="100px" width="100px">
         </div>
         <div id="weatherResult">
             <!-- Weather results will be displayed here -->
