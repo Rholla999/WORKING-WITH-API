@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Api</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <div class="container">
+        <h1>Weather Api</h1>
+        <form id="formContainer">
+            <input type="text" id="cityInput" placeholder="Enter city name" required>
+            <button type="submit" id="getWeatherBtn">Get Weather</button>
+        </form>
+        <div class="cityDisplay">
+        <h3>City:<span id="cityName"> Jos</span></h3>
+
+        </div>
+        <div id="weatherResult">
+            <!-- Weather results will be displayed here -->
+                    <p>Temperature <span id="temperature"> 30&#8451;</span> </p>
+                    <p>Description <span id="description">Cloudy</span> </p>
+                    <p>Humidity  <span id="humidity"> 60%</span></p>
+                    <p>WindSpeed <span id="windSpeed"> 12</span> </p>
+        </div>
+        </div>
+    </main>
+
+
+     <script src="script.js"></script>
+</body>
+</html>
